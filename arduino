@@ -1,0 +1,295 @@
+In file included from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\io.h:99:0,
+                 from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\pgmspace.h:90,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/String.h:31,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Print.h:24,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Stream.h:25,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Client.h:22,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/ArduinoAPI.h:29,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/Arduino.h:23,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.h:26,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:22:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h: In member function 'void DS3231::begin()':
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:12:7: error: 'TWSR' was not declared in this scope
+   cbi(TWSR, TWPS0);
+       ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:12:3: note: in expansion of macro 'cbi'
+   cbi(TWSR, TWPS0);
+   ^~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:12:7: note: suggested alternative: 'TWI0'
+   cbi(TWSR, TWPS0);
+       ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:12:3: note: in expansion of macro 'cbi'
+   cbi(TWSR, TWPS0);
+   ^~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:12:13: error: 'TWPS0' was not declared in this scope
+   cbi(TWSR, TWPS0);
+             ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:12:3: note: in expansion of macro 'cbi'
+   cbi(TWSR, TWPS0);
+   ^~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:12:13: note: suggested alternative: 'TWI0'
+   cbi(TWSR, TWPS0);
+             ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:12:3: note: in expansion of macro 'cbi'
+   cbi(TWSR, TWPS0);
+   ^~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:13:13: error: 'TWPS1' was not declared in this scope
+   cbi(TWSR, TWPS1);
+             ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:13:3: note: in expansion of macro 'cbi'
+   cbi(TWSR, TWPS1);
+   ^~~
+In file included from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:26:0:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:14:3: error: 'TWBR' was not declared in this scope
+   TWBR = ((F_CPU / TWI_FREQ) - 16) / 2;
+   ^~~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:14:3: note: suggested alternative: 'TWI0'
+   TWBR = ((F_CPU / TWI_FREQ) - 16) / 2;
+   ^~~~
+   TWI0
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:17:3: error: 'TWCR' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWIE)/* | _BV(TWEA)*/;
+   ^~~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:17:3: note: suggested alternative: 'TWI0'
+   TWCR = _BV(TWEN) | _BV(TWIE)/* | _BV(TWEA)*/;
+   ^~~~
+   TWI0
+In file included from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\io.h:99:0,
+                 from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\pgmspace.h:90,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/String.h:31,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Print.h:24,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Stream.h:25,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Client.h:22,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/ArduinoAPI.h:29,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/Arduino.h:23,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.h:26,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:22:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:17:14: error: 'TWEN' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWIE)/* | _BV(TWEA)*/;
+              ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:17:14: note: suggested alternative: 'TWI0'
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:17:26: error: 'TWIE' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWIE)/* | _BV(TWEA)*/;
+                          ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:17:26: note: suggested alternative: 'TWI0'
+In file included from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:26:0:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h: In member function 'void DS3231::_burstRead()':
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:31:3: error: 'TWCR' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+   ^~~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:31:3: note: suggested alternative: 'TWI0'
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+   ^~~~
+   TWI0
+In file included from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\io.h:99:0,
+                 from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\pgmspace.h:90,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/String.h:31,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Print.h:24,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Stream.h:25,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Client.h:22,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/ArduinoAPI.h:29,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/Arduino.h:23,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.h:26,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:22:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:31:14: error: 'TWEN' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+              ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:31:14: note: suggested alternative: 'TWI0'
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:31:26: error: 'TWEA' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+                          ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:31:26: note: suggested alternative: 'TWI0'
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:31:38: error: 'TWINT' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+                                      ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:31:38: note: suggested alternative: 'TWI_t'
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:31:51: error: 'TWSTA' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+                                                   ^
+In file included from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:26:0:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:33:3: error: 'TWDR' was not declared in this scope
+   TWDR = DS3231_ADDR_W;
+   ^~~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:33:3: note: suggested alternative: 'TWI0'
+   TWDR = DS3231_ADDR_W;
+   ^~~~
+   TWI0
+In file included from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\io.h:99:0,
+                 from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\pgmspace.h:90,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/String.h:31,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Print.h:24,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Stream.h:25,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Client.h:22,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/ArduinoAPI.h:29,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/Arduino.h:23,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.h:26,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:22:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:55:38: error: 'TWSTO' was not declared in this scope
+   TWCR = _BV(TWEN)| _BV(TWINT) | _BV(TWSTO);         // Send STOP
+                                      ^
+In file included from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:26:0:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h: In member function 'uint8_t DS3231::_readRegister(uint8_t)':
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:85:3: error: 'TWCR' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+   ^~~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:85:3: note: suggested alternative: 'TWI0'
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+   ^~~~
+   TWI0
+In file included from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\io.h:99:0,
+                 from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\pgmspace.h:90,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/String.h:31,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Print.h:24,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Stream.h:25,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Client.h:22,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/ArduinoAPI.h:29,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/Arduino.h:23,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.h:26,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:22:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:85:14: error: 'TWEN' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+              ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:85:14: note: suggested alternative: 'TWI0'
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:85:26: error: 'TWEA' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+                          ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:85:26: note: suggested alternative: 'TWI0'
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:85:38: error: 'TWINT' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+                                      ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:85:38: note: suggested alternative: 'TWI_t'
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:85:51: error: 'TWSTA' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+                                                   ^
+In file included from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:26:0:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:87:3: error: 'TWDR' was not declared in this scope
+   TWDR = DS3231_ADDR_W;
+   ^~~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:87:3: note: suggested alternative: 'TWI0'
+   TWDR = DS3231_ADDR_W;
+   ^~~~
+   TWI0
+In file included from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\io.h:99:0,
+                 from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\pgmspace.h:90,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/String.h:31,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Print.h:24,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Stream.h:25,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Client.h:22,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/ArduinoAPI.h:29,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/Arduino.h:23,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.h:26,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:22:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:106:38: error: 'TWSTO' was not declared in this scope
+   TWCR = _BV(TWEN)| _BV(TWINT) | _BV(TWSTO);         // Send STOP
+                                      ^
+In file included from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:26:0:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h: In member function 'void DS3231::_writeRegister(uint8_t, uint8_t)':
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:128:3: error: 'TWCR' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+   ^~~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:128:3: note: suggested alternative: 'TWI0'
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+   ^~~~
+   TWI0
+In file included from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\io.h:99:0,
+                 from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\pgmspace.h:90,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/String.h:31,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Print.h:24,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Stream.h:25,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Client.h:22,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/ArduinoAPI.h:29,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/Arduino.h:23,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.h:26,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:22:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:128:14: error: 'TWEN' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+              ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:128:14: note: suggested alternative: 'TWI0'
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:128:26: error: 'TWEA' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+                          ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:128:26: note: suggested alternative: 'TWI0'
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:128:38: error: 'TWINT' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+                                      ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:128:38: note: suggested alternative: 'TWI_t'
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:128:51: error: 'TWSTA' was not declared in this scope
+   TWCR = _BV(TWEN) | _BV(TWEA) | _BV(TWINT) | _BV(TWSTA);      // Send START
+                                                   ^
+In file included from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:26:0:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:130:3: error: 'TWDR' was not declared in this scope
+   TWDR = DS3231_ADDR_W;
+   ^~~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:130:3: note: suggested alternative: 'TWI0'
+   TWDR = DS3231_ADDR_W;
+   ^~~~
+   TWI0
+In file included from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\io.h:99:0,
+                 from c:\users\jerem\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino5\avr\include\avr\pgmspace.h:90,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/String.h:31,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Print.h:24,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Stream.h:25,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/Client.h:22,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/api/ArduinoAPI.h:29,
+                 from C:\Users\jerem\AppData\Local\Arduino15\packages\arduino\hardware\megaavr\1.8.6\cores\arduino/Arduino.h:23,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.h:26,
+                 from C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:22:
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\hardware/avr/HW_AVR.h:140:38: error: 'TWSTO' was not declared in this scope
+   TWCR = _BV(TWEN)| _BV(TWINT) | _BV(TWSTO);         // Send STOP
+                                      ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp: In member function 'char* DS3231::getDOWStr(uint8_t)':
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:275:17: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  char *output = "xxxxxxxxxx";
+                 ^~~~~~~~~~~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:276:99: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  char *daysLong[]  = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+                                                                                                   ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:276:99: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:276:99: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:276:99: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:276:99: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:276:99: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:276:99: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:277:70: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  char *daysShort[] = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+                                                                      ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:277:70: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:277:70: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:277:70: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:277:70: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:277:70: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:277:70: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp: In member function 'char* DS3231::getMonthStr(uint8_t)':
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:289:16: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  char *output= "xxxxxxxxx";
+                ^~~~~~~~~~~
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:290:144: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  char *monthLong[]  = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+                                                                                                                                                ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:290:144: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:290:144: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:290:144: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:290:144: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:290:144: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:290:144: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:290:144: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:290:144: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:290:144: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:290:144: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:290:144: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:291:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  char *monthShort[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+                                                                                                          ^
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:291:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:291:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:291:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:291:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:291:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:291:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:291:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:291:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:291:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:291:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+C:\Users\jerem\OneDrive\Documents\Arduino\libraries\DS3231\DS3231.cpp:291:106: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+exit status 1
+Error compiling for board Arduino Uno WiFi Rev2.
